@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+
+  }
+
+  #mousePos{
+    color: rgb(255, 255, 255);
+    font-family: "Consolas";
+    z-index: 200;
+  }
+  
+  #mousetx {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 200;
+  }
+  
+
+
+
+
+  /* NAVBAR */
+
+.navbar{
+    font-size: 1.5rem;
+    font-family:"consolas", "Cascadia mono", "Arial" ;
+    width: auto;
+    height: 150px;
+    display: flex;
+    text-align: right;
+    justify-content: right;
+    margin: 15px 60px;
+  }
+  
+  .name{
+  
+      color: #ffffff;
+      letter-spacing: 1rem;
+      padding-right: 700px;
+      padding-top: 10px;
+      font-size: 1.3rem;
+      text-shadow: 0 0 10px #fff , 0 0 20px #fff ;
+      
+  
+  }
+  
+  .navbarUL{
+    display: inline;
+    margin: 0;
+   
+    text-align: right;
+  }
+  
+  .navbarLinks{
+    list-style-type: none;
+    display: inline-block;
+    
+  
+  }
+  
+  .navbarItem{
+    
+    
+    border: 1px dashed #fff;
+    border-top: none;
+    border-bottom: none;
+    
+    padding: 0 3rem;
+    color: white;
+    text-decoration: none;
+    z-index: 20;
+    
+    
+  }
+  
+  .navbarItem:hover{
+  
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+    text-decoration-color: rgb(255, 255, 255);
+    border-top: white;
+    text-shadow: 0px 0px 15px #fff;
+    transition: 0.2s;
+    
+  }
+  
+  .hiddenCont{
+    
+    height: 150px;
+    width: 164px;
+    margin: 0px 0px;
+    
+    font-size: 1.3rem;
+    position: absolute;
+    display:block;
+    opacity: 0;
+    border: 1px dashed white;
+    border-top: none;
+    transition: 0.5s ease-out;
+  
+  }
+  
+  .hiddenlink{ 
+    padding: 7px 0;
+    display: block; 
+    list-style-type: none;
+    
+    text-align: center;
+    
+  }
+  
+  .hidden{
+    font-family:"consolas", "Cascadia mono", "Arial" ;
+    align-items: center;
+    display:block;
+    text-decoration: none;
+    color: #fff;
+    margin: 15px auto;
+  }
+  
+  #works:hover .hiddenCont{
+    display: block;
+    opacity: 1;
+    transition: 0.2s ease-in;
+    
+    
+  }
+  
+  .hidden:hover{
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+    text-decoration-color: rgb(255, 255, 255);
+    border-top: white;
+  }
+
+  .body{
+    font-family:"consolas", "Cascadia mono", "Arial" ;
+    background-color: black;
+  }
+
+
+  .aboutInfo{
+    color: #fff;
+    margin-left: 100px;
+    margin-top: 100px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* FOOTER */
+
+
+.footer{
+    
+    text-align: right;
+    color: #fff;
+    font-family:"consolas", "Cascadia mono", "Arial";
+    height: 100vh;
+
+    margin-top: 250px;
+
+    float: right;
+  }
+  
+
+  
+  .copyright{
+    position: absolute;
+    text-align: center;
+    width: 215px;
+    font-size: 18px;
+    bottom: 0;
+    right: 0;
+    border: 1px solid #fff;
+  }

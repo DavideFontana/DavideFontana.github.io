@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home_page</title>
+    <link rel="stylesheet" href="styles_home.css">
+
+    <script src="https://kit.fontawesome.com/95673677e4.js" crossorigin="anonymous"></script>
+</head>
+<body id="homePage" onload="myMove()">
+   
+
+<!--Navigation bar-->
+<nav class="navbar">
+
+      <ul class="navbarUL">
+          <li class="navbarLinks">
+              <a href="index.html" class="navbarItem"><span id="h">Home</span></a>
+          </li>
+          <li class="navbarLinks" id="works">
+              <a href="works.html" class="navbarItem"><span id="w">Works</span></a>
+              
+              <ul class="hiddenCont">
+                <li class="hiddenlink">
+                    <a href="works.html" class="hidden">Selected</a>
+                </li>
+                <li class="hiddenlink">
+                    <a href="works.html#all" class="hidden">All</a>
+                </li>
+            </ul>
+
+          </li>
+          <li class="navbarLinks">
+              <a href="/" class="navbarItem"><span id="c">Contacts</span></a>
+          </li>
+
+          
+
+    </ul>
+</nav>
+
+
+<!--BG-->
+<div class="bg">
+    <video id="bgVideo" autoplay loop muted poster="Mediapool/Lampioni_Line art_CLEAN.mp4">
+        <source src="Mediapool/Lampioni_Line art_CLEAN.mp4" type="video/mp4">
+    </video>
+</div>
+<div id="mousetx" style="border:1px solid rgb(255, 255, 255);padding:4px">
+    <a id="mousePos">
+      <b><span id="mouse-pos"></span></b>
+    </a>
+
+    <script src="app.js"></script>
+    
+</div>
+
+
+
+<div class="name">
+    <div id="df">Davide _ Fontana
+        <div class="bg2">
+            <video id="bgVideo2" autoplay loop muted poster="Mediapool/Lampioni_Line art_CLEAN.mp4">
+                <source src="Mediapool/OM_1.mp4" type="video/mp4">
+            </video>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!--Footer-->
+<div class="footer">
+    
+    <div class="copyright">
+        <i class="fa-sharp fa-regular fa-copyright"></i>
+        <i id="year">2018-2023</i>
+
+        <a href="" style="color: #fff;" target="_blank">
+            <i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:davidefon98@gmail.com" style="color: #fff;">
+            <i class="fa-sharp fa-regular fa-envelope"></i></a>
+        
+    </div>
+    
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
