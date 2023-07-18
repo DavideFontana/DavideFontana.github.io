@@ -23,7 +23,7 @@
 
 #mousePos{
     color: rgb(255, 255, 255);
-    font-family: "Consolas";
+    font-family: "Consolas", 'Source Code Pro';
     z-index: 200;
   }
   
@@ -40,33 +40,42 @@
   /* NAVBAR */
 
   .navbar{
+    margin: 16px auto;
+  
+    position: relative;
+  
+    min-width: 500px;
+  
+    
     font-size: 1.5rem;
-    font-family:"consolas", "Cascadia mono", "Arial" ;
-    width: auto;
-    height: 110px;
-    display: flex;
-    text-align: right;
-    justify-content: right;
-    margin: 15px 60px;
+    font-family:"consolas", "Cascadia mono", 'Source Code Pro', "Arial" ;
+    width: 100%;
+    height: 9rem;
+    
+    
   }
   
   .name{
+    display: inline-block;
+    margin-left: 2%;
+    margin-right: auto;
+    
+    color: #ffffff;
+    letter-spacing: .8vw;
+    font-size: 1.3rem;
+    text-shadow: 0 0 1rem #fff , 0 0 2rem #fff ;
+    width: auto;
   
-      color: #ffffff;
-      letter-spacing: 1rem;
-      padding-right: 700px;
-      padding-top: 10px;
-      font-size: 1.3rem;
-      text-shadow: 0 0 10px #fff , 0 0 20px #fff ;
-      
-  
+    padding-top: 1rem;
   }
   
   .navbarUL{
-    display: inline;
-    margin: 0;
+  
+    float: right;
+    width: auto;
+    padding-top: 1rem;
+    margin-right: 2rem;
    
-    text-align: right;
   }
   
   .navbarLinks{
@@ -97,15 +106,15 @@
     text-decoration-thickness: 2px;
     text-decoration-color: rgb(255, 255, 255);
     border-top: white;
-    text-shadow: 0px 0px 15px #fff;
+    text-shadow: 0px 0px 2rem #fff;
     transition: 0.2s;
     
   }
   
   .hiddenCont{
     
-    height: 150px;
-    width: 164px;
+    height: 10rem;
+    width: 10.25rem;
     margin: 0px 0px;
     
     font-size: 1.3rem;
@@ -128,7 +137,7 @@
   }
   
   .hidden{
-    font-family:"consolas", "Cascadia mono", "Arial" ;
+    font-family:"consolas", "Cascadia mono", 'Source Code Pro', "Arial" ;
     align-items: center;
     display:block;
     text-decoration: none;
@@ -151,7 +160,6 @@
     border-top: white;
   }
 
-
     
  /* BODY */
 
@@ -163,7 +171,7 @@
 
   .header{
     color: #fff;
-    margin-top: 50px;
+    margin-top: 2.5rem;
     position: relative;
     width: 100vw;
 
@@ -172,7 +180,7 @@
   .headercont{
     display: block;
     
-    height: 500px;
+    height: 30rem;
     
     text-align: center;
     background-position: center;
@@ -193,15 +201,15 @@
 
     position: absolute;
     border: 1px solid #fff;
-    top: 150px;
-    left: 300px;
+    top: 15vh;
+    left: 14vw;
   }
 
   .info{
-    text-shadow: 0 0 10px #fff , 0 0 20px #fff ;
+    text-shadow: 0 0 1rem #fff , 0 0 1.5rem #fff ;
     position: absolute;
-    top: 250px;
-    left: 410px;
+    top: 25vh;
+    left: 20vw;
     text-align: left;
    
     font-size: 1.25rem;
@@ -213,8 +221,8 @@
 .gameImg{
     display: block;
     margin: auto;
-    margin-bottom: 150px;
-    width: 1000px;
+    margin-bottom: 9rem;
+    width: 60rem;
     object-fit: cover;
   }
   
@@ -222,8 +230,8 @@
     display: block;
     color: #fff;
     font-size: 1.5rem;
-    padding-bottom: 100px;
-    margin-left: 200px;
+    padding-bottom: 6rem;
+    margin-left: 10vw;
   }
   
 
@@ -231,25 +239,23 @@
   /* FOOTER */
 
 
-.footer{
+  .footer{
     text-align: right;
     color: #fff;
     font-family:"consolas", "Cascadia mono", "Arial";
-    
-
-    margin-top: 250px;
-
-    float: right;
+    padding-right: 2.5rem;
   }
   
   #year{
-    padding-right: 30px;
+    padding-right: 2rem;
   }
   
   .copyright{
     text-align: center;
-    width: 215px;
-    font-size: 18px;
+    width: 17rem;
+    font-size: 1.2rem;
     display: inline-block;
     border: 1px solid #fff;
   }
+  
+  
