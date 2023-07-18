@@ -10,7 +10,7 @@
 
 #mousePos{
   color: rgb(255, 255, 255);
-  font-family: "Consolas";
+  font-family: "Consolas", 'Source Code Pro';
   z-index: 200;
 }
 
@@ -20,19 +20,6 @@
   z-index: 200;
 }
 
-#bgVideo {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
- z-index: -1;
-
-}
-
 
 
 
@@ -40,33 +27,42 @@
 /* NAVBAR */
 
 .navbar{
+  margin: 16px auto;
+
+  position: relative;
+
+  min-width: 500px;
+
+  
   font-size: 1.5rem;
-  font-family:"consolas", "Cascadia mono", "Arial" ;
-  width: auto;
-  height: 150px;
-  display: flex;
-  text-align: right;
-  justify-content: right;
-  margin: 15px 60px;
+  font-family:"consolas", "Cascadia mono", 'Source Code Pro', "Arial" ;
+  width: 100%;
+  height: 9rem;
+  
+  
 }
 
 .name{
+  display: inline-block;
+  margin-left: 2%;
+  margin-right: auto;
+  
+  color: #ffffff;
+  letter-spacing: .8vw;
+  font-size: 1.3rem;
+  text-shadow: 0 0 1rem #fff , 0 0 2rem #fff ;
+  width: auto;
 
-    color: #ffffff;
-    letter-spacing: 1rem;
-    padding-right: 700px;
-    padding-top: 10px;
-    font-size: 1.3rem;
-    text-shadow: 0 0 10px #fff , 0 0 20px #fff ;
-    
-
+  padding-top: 1rem;
 }
 
 .navbarUL{
-  display: inline;
-  margin: 0;
+
+  float: right;
+  width: auto;
+  padding-top: 1rem;
+  margin-right: 2rem;
  
-  text-align: right;
 }
 
 .navbarLinks{
@@ -97,15 +93,15 @@
   text-decoration-thickness: 2px;
   text-decoration-color: rgb(255, 255, 255);
   border-top: white;
-  text-shadow: 0px 0px 15px #fff;
+  text-shadow: 0px 0px 2rem #fff;
   transition: 0.2s;
   
 }
 
 .hiddenCont{
   
-  height: 150px;
-  width: 164px;
+  height: 10rem;
+  width: 10.25rem;
   margin: 0px 0px;
   
   font-size: 1.3rem;
@@ -128,7 +124,7 @@
 }
 
 .hidden{
-  font-family:"consolas", "Cascadia mono", "Arial" ;
+  font-family:"consolas", "Cascadia mono", 'Source Code Pro', "Arial" ;
   align-items: center;
   display:block;
   text-decoration: none;
@@ -169,8 +165,8 @@
   
   position: relative;
   display: inline-block;
-  margin-top: 200px;
-  margin-left: 100px;
+  margin-top: 10rem;
+  margin-left: 6rem;
   padding: 0 20px;
   font-size: 1.5rem;
   letter-spacing: 0.5rem;
@@ -179,13 +175,14 @@
 }
 
 #all{
-  margin-bottom: 100px;
+  margin-top: 14rem;
+  
 }
 
 .asterisco{
   color: blue;
   display: block;
-  margin-right: 50px;
+  margin-right: 4rem;
   text-align: right;
   font-size: 1rem;
   letter-spacing: 0.25rem;
@@ -197,7 +194,7 @@
  animation: fadeInAnimation ease 1.5s;
  animation-iteration-count: 1;
  animation-fill-mode: forwards;
- font-family: "consolas", "Cascadia mono", "Arial" ;
+ font-family: "consolas", "Cascadia mono", 'Source Code Pro', "Arial" ;
  color: #fff;
  
 
@@ -214,9 +211,11 @@
 
 .worksCont{
     
-    width: 66%;
+  
+    
     height: auto;
-    margin: auto;
+    margin-left: 15vw;
+    margin-right: 15vw;
     
 
 }
@@ -224,7 +223,7 @@
 
     position: relative;
     display: inline-block;
-    padding: 90px 90px;
+    padding: 4.1vw 4.1vw;
 
 }
 
@@ -232,8 +231,8 @@
 
     display: inline-block;
     object-fit: cover;
-    width: 250px;
-    height: 250px;   
+    width: 16rem;
+    height: 16rem;   
     box-shadow: rgb(0, 0, 0) 20px 20px 0px -1px, rgb(255, 255, 255) 20px 20px;
     transition: 0.2s ease-in-out;
 }
@@ -243,10 +242,10 @@
 .infoHover{
 
   position: absolute;
-  width: 250px;
-  height: 250px;
-  margin-bottom: 94px;
-  bottom: 0;
+  width: 16rem;
+  height: 16rem;
+  transform: translateY(-16.4rem);
+ 
   opacity: 0;
   
 
@@ -272,18 +271,18 @@
 #infoTitle{
 
   font-size: 2rem;
-  width: 350px;
-  margin-left: 20px;
+  width: 20rem;
+  margin-left: 1.5rem;
   overflow:scroll;
 
 }
 
 #infoInfo{
-  margin-left: 20px;
+  margin-left: 1.5rem;
 
 }
 #infoYear{
-  margin-left: 20px;
+  margin-left: 1.5rem;
 }
 
 
@@ -297,39 +296,28 @@
 /* ALL */
 
 .btnCont{
-  position: relative;
+  position: absolute;
+  width: 100vw;
 }
 .scrollBtn{
-  height: 100px;
-  width: auto;
-}
-
-#scrollLeft{
-  position: absolute;
-  font-size: 2.2rem;
   top: 260px;
-  padding-left: 18px;
+  font-size: 2.2rem;
   
   color: #fff;
   background-color: transparent;
   border: none;
   z-index: 100;
+}
+
+#scrollLeft{
+  position: absolute;
+  left: 1rem;
 
 }
 
 #scrollRight{
   position: absolute;
-  font-size: 2.2rem;
-  top: 260px;
-  left: 98vw;
-  float: right;
-
-  
-  color: #fff;
-  background-color: transparent;
-  border: none;
-  z-index: 100;
-  
+  right: 1rem;
 }
 
 .scrollBtn :hover{
@@ -340,7 +328,7 @@
 .sectionTitle{
   width: auto;
   height: auto;
-  margin-top: 120px;
+  margin-top: 7rem;
   display: block;
   font-size: 1.8rem;
   text-align: center;
@@ -356,8 +344,9 @@
   margin: auto;
   overflow: auto;
   white-space: nowrap;
-  padding: 50px 10px;
-  
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  padding-left: 1rem;
 
 }
 
@@ -391,17 +380,17 @@
   text-align: right;
   color: #fff;
   font-family:"consolas", "Cascadia mono", "Arial";
-  padding-right: 40px;
+  padding-right: 2.5rem;
 }
 
 #year{
-  padding-right: 30px;
+  padding-right: 2rem;
 }
 
 .copyright{
   text-align: center;
-  width: 215px;
-  font-size: 18px;
+  width: 17rem;
+  font-size: 1.2rem;
   display: inline-block;
   border: 1px solid #fff;
 }
