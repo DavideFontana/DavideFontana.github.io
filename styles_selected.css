@@ -12,7 +12,7 @@
 
   #mousePos{
     color: rgb(255, 255, 255);
-    font-family: "Consolas";
+    font-family: "Consolas", 'Source Code Pro';
     z-index: 200;
   }
   
@@ -28,34 +28,43 @@
 
   /* NAVBAR */
 
-.navbar{
+  .navbar{
+    margin: 16px auto;
+  
+    position: relative;
+  
+    min-width: 500px;
+  
+    
     font-size: 1.5rem;
-    font-family:"consolas", "Cascadia mono", "Arial" ;
-    width: auto;
-    height: 110px;
-    display: flex;
-    text-align: right;
-    justify-content: right;
-    margin: 15px 60px;
+    font-family:"consolas", "Cascadia mono", 'Source Code Pro', "Arial" ;
+    width: 100%;
+    height: 9rem;
+    
+    
   }
   
   .name{
+    display: inline-block;
+    margin-left: 2%;
+    margin-right: auto;
+    
+    color: #ffffff;
+    letter-spacing: .8vw;
+    font-size: 1.3rem;
+    text-shadow: 0 0 1rem #fff , 0 0 2rem #fff ;
+    width: auto;
   
-      color: #ffffff;
-      letter-spacing: 1rem;
-      padding-right: 700px;
-      padding-top: 10px;
-      font-size: 1.3rem;
-      text-shadow: 0 0 10px #fff , 0 0 20px #fff ;
-      
-  
+    padding-top: 1rem;
   }
   
   .navbarUL{
-    display: inline;
-    margin: 0;
+  
+    float: right;
+    width: auto;
+    padding-top: 1rem;
+    margin-right: 2rem;
    
-    text-align: right;
   }
   
   .navbarLinks{
@@ -86,15 +95,15 @@
     text-decoration-thickness: 2px;
     text-decoration-color: rgb(255, 255, 255);
     border-top: white;
-    text-shadow: 0px 0px 15px #fff;
+    text-shadow: 0px 0px 2rem #fff;
     transition: 0.2s;
     
   }
   
   .hiddenCont{
     
-    height: 150px;
-    width: 164px;
+    height: 10rem;
+    width: 10.25rem;
     margin: 0px 0px;
     
     font-size: 1.3rem;
@@ -117,7 +126,7 @@
   }
   
   .hidden{
-    font-family:"consolas", "Cascadia mono", "Arial" ;
+    font-family:"consolas", "Cascadia mono", 'Source Code Pro', "Arial" ;
     align-items: center;
     display:block;
     text-decoration: none;
@@ -140,12 +149,17 @@
     border-top: white;
   }
   
+  
+  .worksPage{
+    background-color: black;
+  
+  }
+  
+  
 
 
 
-
-
- /* LANGUAGES */
+ /* LANGUAGES 
 
   .langs{
     display: block;
@@ -178,7 +192,7 @@
   }
 
 
-
+*/
 
 
   
@@ -186,13 +200,13 @@
 
   .worksbody{
     
-    font-family:"consolas", "Cascadia mono", "Arial" ;
+    font-family:'Source Code Pro', "consolas", "Cascadia mono", "Arial" ;
     background-color: black;
   }
 
   .header{
     color: #fff;
-    margin-top: 50px;
+    margin-top: 2.5rem;
     position: relative;
     width: 100vw;
 
@@ -201,7 +215,7 @@
   .headercont{
     display: block;
     
-    height: 750px;
+    height: 47.5rem;
     
     text-align: center;
     background-position: center;
@@ -217,20 +231,19 @@
 
 
   .title{
-   
-    font-size: 3rem;
-
     position: absolute;
+    
+    font-size: 3rem;
     border: 1px solid #fff;
-    top: 150px;
-    left: 300px;
+    top: 9rem;
+    left: 15vw;
   }
 
   .info{
-    text-shadow: 0 0 10px #fff , 0 0 20px #fff ;
+    text-shadow: 0 0 .5rem #fff , 0 0 1.5rem #fff ;
     position: absolute;
-    top: 250px;
-    left: 410px;
+    top: 16rem;
+    left: 25rem;
     text-align: left;
    
     font-size: 1.25rem;
@@ -255,9 +268,9 @@
     display: flex;
     
     height: auto;
-    padding-top: 85px;
-    padding-right: 100px;
-    padding-left: 100px;
+    padding-top: 7vh;
+    padding-right: 5vw;
+    padding-left: 5vw;
     width: 100%;
     
     text-align: justify;
@@ -268,7 +281,7 @@
     color: #696969;
     display: inline-block;
     height: auto;
-    padding-top: 150px;
+    padding-top: 10vh;
     width: 40%;
     text-align: center;
     padding-right: 15vw;
@@ -277,7 +290,7 @@
 .theme{
   display: block;
   text-align: justify;
-  padding: 150px 100px;
+  padding: 15vh 5vw;
 
   color: #fff;
   
@@ -287,8 +300,8 @@
 .YT{
   display: inline-block;
   border: 1px solid #fff;
-  margin-top: 120px;
-  margin-left: 20px;
+  margin-top: 15vh;
+  margin-left: 5vw;
   margin-right: 14vw;
 }
 
@@ -296,7 +309,7 @@
 .techImage{
   display: block;
   width: 100%;
-  height: 700px;
+  height: 47.5rem;
 
   object-fit: cover;
 }
@@ -306,10 +319,10 @@
   text-align: justify;
   height: auto;
   width: 50vw;
-  margin-top: 100px;
-  padding: 10px 100px;
+  margin-top: 5rem;
+  padding: 1rem 5rem;
 
-  border: 1px solid #fff;
+  
   
   color: #fff;
 }
@@ -319,7 +332,7 @@
   display: flex;
   float: right;
   margin-top: 0px;
-  padding: 0 25px;
+  padding: 0 5vw;
   color: #696969;
   
 }
@@ -330,7 +343,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 200px;
+  margin-top: 11rem;
 
 }
 
@@ -343,24 +356,21 @@
 
 
 .footer{
-    text-align: right;
-    color: #fff;
-    font-family:"consolas", "Cascadia mono", "Arial";
-    
+  text-align: right;
+  color: #fff;
+  font-family:"consolas", "Cascadia mono", "Arial";
+  padding-right: 2.5rem;
+}
 
-    margin-top: 250px;
+#year{
+  padding-right: 2rem;
+}
 
-    float: right;
-  }
-  
-  #year{
-    padding-right: 30px;
-  }
-  
-  .copyright{
-    text-align: center;
-    width: 215px;
-    font-size: 18px;
-    display: inline-block;
-    border: 1px solid #fff;
-  }
+.copyright{
+  text-align: center;
+  width: 17rem;
+  font-size: 1.2rem;
+  display: inline-block;
+  border: 1px solid #fff;
+}
+
