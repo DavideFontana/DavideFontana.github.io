@@ -8,7 +8,7 @@
 
   #mousePos{
     color: rgb(255, 255, 255);
-    font-family: "Consolas";
+    font-family: "Consolas", 'Source Code Pro';
     z-index: 200;
   }
   
@@ -24,34 +24,43 @@
 
   /* NAVBAR */
 
-.navbar{
+  .navbar{
+    margin: 16px auto;
+  
+    position: relative;
+  
+    min-width: 500px;
+  
+    
     font-size: 1.5rem;
-    font-family:"consolas", "Cascadia mono", "Arial" ;
-    width: auto;
-    height: 150px;
-    display: flex;
-    text-align: right;
-    justify-content: right;
-    margin: 15px 60px;
+    font-family:"consolas", "Cascadia mono", 'Source Code Pro', "Arial" ;
+    width: 100%;
+    height: 9rem;
+    
+    
   }
   
   .name{
+    display: inline-block;
+    margin-left: 2%;
+    margin-right: auto;
+    
+    color: #ffffff;
+    letter-spacing: .8vw;
+    font-size: 1.3rem;
+    text-shadow: 0 0 1rem #fff , 0 0 2rem #fff ;
+    width: auto;
   
-      color: #ffffff;
-      letter-spacing: 1rem;
-      padding-right: 700px;
-      padding-top: 10px;
-      font-size: 1.3rem;
-      text-shadow: 0 0 10px #fff , 0 0 20px #fff ;
-      
-  
+    padding-top: 1rem;
   }
   
   .navbarUL{
-    display: inline;
-    margin: 0;
+  
+    float: right;
+    width: auto;
+    padding-top: 1rem;
+    margin-right: 2rem;
    
-    text-align: right;
   }
   
   .navbarLinks{
@@ -82,15 +91,15 @@
     text-decoration-thickness: 2px;
     text-decoration-color: rgb(255, 255, 255);
     border-top: white;
-    text-shadow: 0px 0px 15px #fff;
+    text-shadow: 0px 0px 2rem #fff;
     transition: 0.2s;
     
   }
   
   .hiddenCont{
     
-    height: 150px;
-    width: 164px;
+    height: 10rem;
+    width: 10.25rem;
     margin: 0px 0px;
     
     font-size: 1.3rem;
@@ -113,7 +122,7 @@
   }
   
   .hidden{
-    font-family:"consolas", "Cascadia mono", "Arial" ;
+    font-family:"consolas", "Cascadia mono", 'Source Code Pro', "Arial" ;
     align-items: center;
     display:block;
     text-decoration: none;
@@ -137,15 +146,15 @@
   }
 
   .body{
-    font-family:"consolas", "Cascadia mono", "Arial" ;
+    font-family:'Source Code Pro', "consolas", "Cascadia mono", "Arial" ;
     background-color: black;
   }
 
 
   .aboutInfo{
     color: #fff;
-    margin-left: 100px;
-    margin-top: 100px;
+    margin-left: 5vw;
+    margin-top: 6rem;
   }
 
 
@@ -186,26 +195,21 @@
   /* FOOTER */
 
 
-.footer{
-    
+  .footer{
+    padding-top: 20vh;
     text-align: right;
     color: #fff;
     font-family:"consolas", "Cascadia mono", "Arial";
-    height: 100vh;
-
-    margin-top: 250px;
-
-    float: right;
+    padding-right: 2.5rem;
   }
-  
-
+ 
   
   .copyright{
-    position: absolute;
     text-align: center;
-    width: 215px;
-    font-size: 18px;
-    bottom: 0;
-    right: 0;
+    width: 17rem;
+    font-size: 1.2rem;
+    display: inline-block;
     border: 1px solid #fff;
   }
+  
+  
