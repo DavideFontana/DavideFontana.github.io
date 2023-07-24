@@ -387,23 +387,20 @@
   /* FOOTER */
 
 
-.footer{
-  text-align: center;
-  color: #fff;
-  font-family:"consolas", "Cascadia mono", "Arial";
-  padding-right: 0rem;
-  padding-top: 2rem;
-}
-
-#year{
-  padding-right: 2rem;
-}
-
-.copyright{
-  text-align: center;
-  width: 17rem;
-  font-size: 1.2rem;
-  display: inline-block;
-  border: 1px solid #fff;
-}
+  .footer{
+    text-align: center;
+    
+    
+    padding-right: 0rem;
+    padding-top: 2rem;
+  }
+  
+  
+  
+  .copyright{
+    text-align: center;
+    
+    font-size: 1.2rem;
+  
+  }
 }

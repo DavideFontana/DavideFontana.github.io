@@ -236,3 +236,73 @@
   display: inline-block;
   border: 1px solid #fff;
 }
+
+@media only screen and (max-width: 1023px){
+
+  .navbar{
+    display: block;
+    text-align: center;
+    
+    margin: auto;
+  }
+
+.navbarItem{
+  padding: 0 5vw;
+  border: 1px dashed #fff;
+  border-top: none;
+  border-bottom: none;
+  
+}
+
+.navbarUL{
+  display: block;
+  width: 100%;
+  text-align: center;
+  
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hiddenCont{
+  
+  display: none;
+  opacity: 0;
+  
+}
+
+.hiddenlink{ 
+  display: none;
+  
+}
+
+.hidden{
+  display: none;
+}
+
+#works:hover .hiddenCont{
+  display: none;
+  opacity: 0; 
+}
+
+/* FOOTER */
+
+
+.footer{
+  text-align: center;
+  
+  
+  padding-right: 0rem;
+  padding-top: 2rem;
+}
+
+
+
+.copyright{
+  text-align: center;
+  
+  font-size: 1.2rem;
+
+}
+
+}

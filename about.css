@@ -297,8 +297,6 @@
   .footer{
     padding-top: 20vh;
     text-align: center;
-    color: #fff;
-    font-family:"consolas", "Cascadia mono", "Arial";
     padding-right: 0;
   }
  
@@ -308,7 +306,7 @@
     width: 100%;
     font-size: 1.2rem;
     display: block;
-    border: 1px solid #fff;
+    
   }
 }
   

@@ -209,32 +209,28 @@
     }
 }
 
-.worksCont{
-    
-  
-    
-    height: auto;
-    margin-left: 15vw;
-    margin-right: 15vw;
-    
+.worksCont{   
 
+  height: auto;
+  margin: auto;
+  padding: 0 15vw;
 }
+
 .imageCont{
 
-    position: relative;
-    display: inline-block;
-    padding: 4.1vw 4.1vw;
-
+  position: relative;
+  display: inline-block;
+  padding: 6rem 6rem;
 }
 
 .image{
 
-    display: inline-block;
-    object-fit: cover;
-    width: 16rem;
-    height: 16rem;   
-    box-shadow: rgb(0, 0, 0) 20px 20px 0px -1px, rgb(255, 255, 255) 20px 20px;
-    transition: 0.2s ease-in-out;
+  display: inline-block;
+  object-fit: cover;
+  width: 16rem;
+  height: 16rem;   
+  box-shadow: rgb(0, 0, 0) 20px 20px 0px -1px, rgb(255, 255, 255) 20px 20px;
+  transition: 0.2s ease-in-out;
 }
 
 
@@ -471,7 +467,51 @@
   margin-left: auto;
 }
 
+.sel{
+  
 
+  margin-top: 10rem;
+  margin-left: 7vw;
+  padding: 0 20px;
+
+}
+
+.worksCont{   
+  
+  text-align: center;
+  margin: auto;
+  padding: 0 0;
+}
+
+.imageCont{
+  position: relative;
+  display: inline-block;
+  padding: 6rem 6rem;
+}
+
+
+.sectionTitle{
+
+  margin-top: 9rem;
+ 
+}
+
+.scrollBtn{
+  top: 170px;
+  font-size: 1.5rem;
+}
+
+
+.scrollCont{
+ 
+  padding-top: 3rem;
+
+
+}
+
+.scrollCont img{
+  height: 320px;
+}
 
 
 
@@ -479,22 +519,19 @@
 
 .footer{
   text-align: center;
-  color: #fff;
-  font-family:"consolas", "Cascadia mono", "Arial";
+  
+  
   padding-right: 0rem;
   padding-top: 2rem;
 }
 
-#year{
-  padding-right: 2rem;
-}
+
 
 .copyright{
   text-align: center;
-  width: 17rem;
+  
   font-size: 1.2rem;
-  display: inline-block;
-  border: 1px solid #fff;
+
 }
 }
 
