@@ -41,7 +41,7 @@
     width: 100%;
     height: 9rem;
     
-    
+    z-index: 100;
   }
   
   .name{
@@ -256,10 +256,18 @@
   max-width: 100vw;
 }
 
+.ekoimg{
+  display: inline-block;
+  padding-right: 35vw;
+  height: 380px;
+  margin-left: 250px;
+
+}
+
 .descBlock{
-    display: flex;
-    width: 100%;
-    height: auto;
+  display: flex;
+  width: 100%;
+  height: auto;
 
 }
 
@@ -303,6 +311,9 @@
   margin-top: 15vh;
   margin-left: 5vw;
   margin-right: 14vw;
+
+  width: 771px; 
+  height: 410px;
 }
 
 
@@ -374,3 +385,247 @@
   border: 1px solid #fff;
 }
 
+
+@media only screen and (max-width: 1023px){
+
+  .navbar{
+    display: block;
+    
+    margin-left: 0px;
+  }
+
+.navbarItem{
+  padding: 0 5vw;
+  border: 1px dashed #fff;
+  border-top: none;
+  
+}
+
+.navbarUL{
+  display: block;
+  width: 100%;
+  text-align: center;
+  
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hiddenCont{
+    
+  height: 19vh;
+  width: 23vw;
+  margin: 0px 0px;
+  
+  font-size: 1.3rem;
+  position: absolute;
+  display:block;
+  opacity: 0;
+  border: 1px dashed white;
+  border-top: none;
+  transition: 0.5s ease-out;
+
+}
+
+.hiddenlink{ 
+  padding: 5px 0;
+  display: block; 
+  list-style-type: none;
+  
+  text-align: center;
+  
+}
+
+.hidden{
+  font-family:"consolas", "Cascadia mono", 'Source Code Pro', "Arial" ;
+  align-items: center;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  margin: 17px auto;
+}
+
+#works:hover .hiddenCont{
+  display: none;
+  opacity: 0;
+  transition: 0.2s ease-in;
+  
+  
+}
+
+.name{
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+
+
+
+
+.headercont{
+  height: 70vh;
+  background-size: cover;
+}
+
+.title{
+  position: absolute;
+  
+  font-size: 2.8rem;
+  border: 1px solid #fff;
+  top: 9rem;
+  left: 6vw;
+}
+
+.info{
+  text-shadow: 0 0 .5rem #fff , 0 0 1.5rem #fff ;
+  position: absolute;
+  top: 16rem;
+  left: 7rem;
+  text-align: left;
+ 
+  font-size: 1.25rem;
+}
+
+.descDiv{
+  color: #fff;
+  display: flex;
+  
+  height: auto;
+  padding-top: 7vh;
+  padding-right: 5vw;
+  padding-left: 5vw;
+  width: 100%;
+  font-size: .8rem;
+  
+  text-align: none;
+}
+
+.descBlock{
+  display: block;
+  width: 100%;
+  height: auto;
+
+}
+
+
+.YT{
+display: block;
+width: 80vw;
+height: (80vw*9)/16;
+border: 1px solid #fff;
+margin-top: 15vh;
+margin-left: auto;
+margin-right: auto;
+}
+
+.ekoimg{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-right: 0vw;
+  height: 250px;
+  width: auto;
+  
+
+}
+
+
+.quoteDiv{
+  
+  color: #696969;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  height: auto;
+  padding-top: 10vh;
+  width: 80vw;
+  text-align: center;
+  padding-right: 0;
+  font-size: .7rem;
+}
+
+.theme{
+  display: block;
+  text-align: justify;
+  padding: 15vh 5vw;
+  font-size: .8rem;
+
+  color: #fff;
+  
+}
+
+
+.techImage{
+  display: block;
+  width: 100vw;
+  height: 30rem;
+
+  object-fit: cover;
+}
+
+.tech p{
+  display: inline-block;
+  text-align: justify;
+  height: auto;
+  width: auto;
+  margin-top: 5rem;
+  padding: 0rem 5vw;
+  padding-bottom: 2rem;
+
+  
+  
+  color: #fff;
+}
+
+.tech span{
+  text-align: left;
+  display: flex;
+  float: right;
+  margin-top: 0px;
+  padding: 0 5vw;
+  color: #696969;
+  
+}
+
+.paintImg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8rem;
+  width: 100vw;
+
+}
+
+
+
+
+/* FOOTER */
+
+
+.footer{
+  text-align: center;
+  color: #fff;
+  font-family:"consolas", "Cascadia mono", "Arial";
+  padding-right: 0rem;
+  padding-top: 2rem;
+}
+
+#year{
+  padding-right: 2rem;
+}
+
+.copyright{
+  text-align: center;
+  width: 17rem;
+  font-size: 1.2rem;
+  display: inline-block;
+  border: 1px solid #fff;
+}
+
+
+
+}

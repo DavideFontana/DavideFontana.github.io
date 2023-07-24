@@ -258,4 +258,152 @@
     border: 1px solid #fff;
   }
   
+
+
+ 
   
+  @media only screen and (max-width: 1023px){
+
+    .navbar{
+      display: block;
+      
+      margin-left: 0px;
+    }
+  
+  .navbarItem{
+    padding: 0 5vw;
+    border: 1px dashed #fff;
+    border-top: none;
+    
+  }
+  
+  .navbarUL{
+    display: block;
+    width: 100%;
+    text-align: center;
+    
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hiddenCont{
+      
+    height: 19vh;
+    width: 23vw;
+    margin: 0px 0px;
+    
+    font-size: 1.3rem;
+    position: absolute;
+    display:block;
+    opacity: 0;
+    border: 1px dashed white;
+    border-top: none;
+    transition: 0.5s ease-out;
+  
+  }
+  
+  .hiddenlink{ 
+    padding: 5px 0;
+    display: block; 
+    list-style-type: none;
+    
+    text-align: center;
+    
+  }
+  
+  .hidden{
+    font-family:"consolas", "Cascadia mono", 'Source Code Pro', "Arial" ;
+    align-items: center;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    margin: 17px auto;
+  }
+  
+  #works:hover .hiddenCont{
+    display: none;
+    opacity: 0;
+    transition: 0.2s ease-in;
+    
+    
+  }
+  
+  .name{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  
+  
+  
+  
+  
+  .headercont{
+    height: 65vh;
+    background-size: cover;
+  }
+  
+  .title{
+    position: absolute;
+    
+    font-size: 2.8rem;
+    border: 1px solid #fff;
+    top: 9rem;
+    left: 6vw;
+  }
+  
+  .info{
+    text-shadow: 0 0 .5rem #fff , 0 0 1.5rem #fff ;
+    position: absolute;
+    top: 16rem;
+    left: 7rem;
+    text-align: left;
+   
+    font-size: 1.25rem;
+  }
+
+  .gameImg{
+    display: block;
+    margin: auto;
+    margin-bottom: 10vh;
+    width: 95vw;
+    object-fit: cover;
+  }
+  
+  .gameDesc{
+    display: block;
+    padding: 0 3vw;
+    width: 100vw;
+    color: #fff;
+    font-size: 1.5rem;
+    padding-bottom: 7rem;
+    margin-left: 0;
+  }
+  
+  /* FOOTER */
+
+
+.footer{
+  text-align: center;
+  color: #fff;
+  font-family:"consolas", "Cascadia mono", "Arial";
+  padding-right: 0rem;
+  padding-top: 2rem;
+}
+
+#year{
+  padding-right: 2rem;
+}
+
+.copyright{
+  text-align: center;
+  width: 17rem;
+  font-size: 1.2rem;
+  display: inline-block;
+  border: 1px solid #fff;
+}
+}
