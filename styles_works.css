@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    max-width: 100%;
 
   }
   
@@ -267,15 +268,14 @@
 #infoTitle{
 
   font-size: 2rem;
-  width: 20rem;
+  
   margin-left: 1.5rem;
-  overflow:scroll;
+  overflow: visible;
 
 }
 
 #infoInfo{
   margin-left: 1.5rem;
-
 }
 #infoYear{
   margin-left: 1.5rem;
@@ -396,8 +396,9 @@
 
   .navbar{
     display: block;
-    
+    width: 100%;
     margin-left: 0px;
+    max-width: 100%;
   }
 
 .navbarItem{
@@ -412,7 +413,7 @@
   width: 100%;
   text-align: center;
   
-  float: none;
+  
   margin-left: auto;
   margin-right: auto;
 }
@@ -423,40 +424,31 @@
   width: 23vw;
   margin: 0px 0px;
   
-  font-size: 1.3rem;
-  position: absolute;
-  display:block;
+  
+  display: none;
+  
   opacity: 0;
-  border: 1px dashed white;
-  border-top: none;
-  transition: 0.5s ease-out;
+  
 
 }
 
 .hiddenlink{ 
   padding: 5px 0;
-  display: block; 
-  list-style-type: none;
-  
-  text-align: center;
+  display: none;
   
 }
 
 .hidden{
   font-family:"consolas", "Cascadia mono", 'Source Code Pro', "Arial" ;
-  align-items: center;
-  display: block;
-  text-decoration: none;
-  color: #fff;
-  margin: 17px auto;
+  
+  display: none;
+  
 }
 
 #works:hover .hiddenCont{
   display: none;
   opacity: 0;
-  transition: 0.2s ease-in;
-  
-  
+ 
 }
 
 .name{
@@ -504,13 +496,15 @@
 
 .scrollCont{
  
+  width: 100%;
+  max-width: 100%;
   padding-top: 3rem;
 
 
 }
 
 .scrollCont img{
-  height: 320px;
+  height: 270px;
 }
 
 
