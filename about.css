@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
+    max-width: 100%;
 
   }
 
@@ -218,8 +218,9 @@
 
     .navbar{
       display: block;
-      
+      width: 100%;
       margin-left: 0px;
+      max-width: 100%;
     }
   
   .navbarItem{
@@ -234,51 +235,42 @@
     width: 100%;
     text-align: center;
     
-    float: none;
+    
     margin-left: auto;
     margin-right: auto;
   }
-
+  
   .hiddenCont{
-    
+      
     height: 19vh;
     width: 23vw;
     margin: 0px 0px;
     
-    font-size: 1.3rem;
-    position: absolute;
-    display:block;
+    
+    display: none;
+    
     opacity: 0;
-    border: 1px dashed white;
-    border-top: none;
-    transition: 0.5s ease-out;
+    
   
   }
   
   .hiddenlink{ 
     padding: 5px 0;
-    display: block; 
-    list-style-type: none;
-    
-    text-align: center;
+    display: none;
     
   }
   
   .hidden{
     font-family:"consolas", "Cascadia mono", 'Source Code Pro', "Arial" ;
-    align-items: center;
-    display: block;
-    text-decoration: none;
-    color: #fff;
-    margin: 17px auto;
+    
+    display: none;
+    
   }
-
+  
   #works:hover .hiddenCont{
     display: none;
     opacity: 0;
-    transition: 0.2s ease-in;
-    
-    
+   
   }
   
   .name{
