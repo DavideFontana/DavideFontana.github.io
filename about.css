@@ -216,63 +216,89 @@
 
   @media only screen and (max-width: 1023px){
 
-    .navbar{
-      display: block;
-      width: 100%;
-      margin-left: 0px;
-      max-width: 100%;
+    *{
+      max-width: 100vw;
     }
   
-  .navbarItem{
-    padding: 0 5vw;
-    border: 1px dashed #fff;
-    border-top: none;
-    
-  }
+    .navbar{
+      display: block;
+      text-align: center;
+      min-width: auto;
+      width: 100%;
+      margin: auto;
+    }
   
-  .navbarUL{
-    display: block;
-    width: 100%;
-    text-align: center;
+    .navbarUL{
+      display: block;
+      width: 100%;
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+      margin: 0;
+      align-items: center;
+      text-align: center;
+    }
     
-    
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .hiddenCont{
+    .navbarLinks{
+      list-style-type: none;
+      display: inline-block;
       
-    height: 19vh;
-    width: 23vw;
-    margin: 0px 0px;
+    
+    }
+    
+    .navbarItem{
+      
+      font-family:"consolas", "Cascadia mono", "Arial" ;
+      border: 1px dashed #fff;
+      border-top: none;
+     
+      font-size: 100%;
+      padding: 0 4vw;
+      color: white;
+      text-decoration: none;
+      z-index: 20; 
+    }
+    
+    .navbarItem:hover{
+    
+      text-decoration: line-through;
+      text-decoration-thickness: 2px;
+      text-decoration-color: rgb(255, 255, 255);
+      border-top: white;
+      text-shadow: 0px 0px 15px #fff;
+      transition: 0.2s;
+      
+    }
     
     
-    display: none;
     
-    opacity: 0;
     
+    
+    .hiddenCont{
+      display: none;
+    }
   
-  }
-  
-  .hiddenlink{ 
-    padding: 5px 0;
-    display: none;
+    .hiddenlink{ 
+      display: none;
+    }
     
-  }
-  
-  .hidden{
-    font-family:"consolas", "Cascadia mono", 'Source Code Pro', "Arial" ;
+    .hidden{
+      display: none;
+    }
     
-    display: none;
     
-  }
-  
-  #works:hover .hiddenCont{
-    display: none;
-    opacity: 0;
-   
-  }
-  
+    #works:hover .hiddenCont{
+      opacity: 0;
+      
+    }
+    
+    .hidden:hover{
+      text-decoration: line-through;
+      text-decoration-thickness: 2px;
+      text-decoration-color: rgb(255, 255, 255);
+      border-top: white;
+    }
+    
   .name{
     display: block;
     width: 100%;
@@ -280,7 +306,7 @@
     margin-right: auto;
     margin-left: auto;
   }
-
+  
 
 
   /* FOOTER */

@@ -389,63 +389,89 @@
 /*For tablet and small screen*/
 @media only screen and (max-width: 1023px){
 
-  .navbar{
-    display: block;
-    width: 100%;
-    margin-left: 0px;
+  *{
     max-width: 100%;
   }
 
-.navbarItem{
-  padding: 0 5vw;
-  border: 1px dashed #fff;
-  border-top: none;
-  
-}
+  .navbar{
+    display: block;
+    text-align: center;
+    min-width: auto;
+    width: 100%;
+    margin: auto;
+  }
 
-.navbarUL{
-  display: block;
-  width: 100%;
-  text-align: center;
+  .navbarUL{
+    display: block;
+    width: 100%;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0;
+    align-items: center;
+    text-align: center;
+  }
   
-  
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.hiddenCont{
+  .navbarLinks{
+    list-style-type: none;
+    display: inline-block;
     
-  height: 19vh;
-  width: 23vw;
-  margin: 0px 0px;
+  
+  }
+  
+  .navbarItem{
+    
+    font-family:"consolas", "Cascadia mono", "Arial" ;
+    border: 1px dashed #fff;
+    border-top: none;
+   
+    font-size: 100%;
+    padding: 0 4vw;
+    color: white;
+    text-decoration: none;
+    z-index: 20; 
+  }
+  
+  .navbarItem:hover{
+  
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+    text-decoration-color: rgb(255, 255, 255);
+    border-top: white;
+    text-shadow: 0px 0px 15px #fff;
+    transition: 0.2s;
+    
+  }
   
   
-  display: none;
   
-  opacity: 0;
   
+  
+  .hiddenCont{
+    display: none;
+  }
 
-}
-
-.hiddenlink{ 
-  padding: 5px 0;
-  display: none;
+  .hiddenlink{ 
+    display: none;
+  }
   
-}
-
-.hidden{
-  font-family:"consolas", "Cascadia mono", 'Source Code Pro', "Arial" ;
+  .hidden{
+    display: none;
+  }
   
-  display: none;
   
-}
-
-#works:hover .hiddenCont{
-  display: none;
-  opacity: 0;
- 
-}
-
+  #works:hover .hiddenCont{
+    opacity: 0;
+    
+  }
+  
+  .hidden:hover{
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+    text-decoration-color: rgb(255, 255, 255);
+    border-top: white;
+  }
+  
 .name{
   display: block;
   width: 100%;
@@ -459,26 +485,27 @@
 
 
 
+
 .headercont{
-  height: 70vh;
-  
+  height: 60vh;
+  overflow: hidden;
 }
 
 .title{
   
-  font-size: 2.8rem;
-  
+  font-size: 2.7rem;
+  text-align: left;
   top: 9rem;
-  left: 6vw;
+  left: 3vw;
 }
 
 .info{
   
   top: 16rem;
-  left: 7rem;
+  left: 22vw;
   
  
-  font-size: 1.25rem;
+  font-size: 1.1rem;
 }
 
 .descDiv{
@@ -488,26 +515,30 @@
   padding-left: 5vw;
   width: 100%;
   font-size: .8rem;
-  
+ 
   text-align: none;
+}
+
+#desc{
+  font-family:"consolas", "Cascadia mono", 'Source Code Pro', "Arial" ;
 }
 
 .descBlock{
   display: block;
   width: 100%;
   height: auto;
-
+  
 }
 
 
 .YT{
-display: block;
-width: 80vw;
-height: (80vw*9)/16;
+  display: block;
+  width: 80vw;
+  height: (80vw*9)/16;
 
-margin-top: 15vh;
-margin-left: auto;
-margin-right: auto;
+  margin-top: 15vh;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .ekoimg{
@@ -531,6 +562,7 @@ margin-right: auto;
   
   padding-top: 10vh;
   width: 80vw;
+  padding-bottom: 0;
   
   padding-right: 0;
   font-size: .7rem;
@@ -538,7 +570,7 @@ margin-right: auto;
 
 .theme{
   display: block;
-  
+  font-family: 'Source Code Pro', "Arial";
   padding: 15vh 5vw;
   font-size: .8rem;
 }
@@ -546,10 +578,13 @@ margin-right: auto;
 
 .techImage{
   display: block;
-  width: 100vw;
-  height: 30rem;
+  width: 100%;
+  height: auto;
+  padding-top: 0;
+}
 
-  
+.tech span{
+  font-size: .5rem;
 }
 
 .tech p{
@@ -559,6 +594,7 @@ margin-right: auto;
   margin-top: 5rem;
   padding: 0rem 5vw;
   padding-bottom: 2rem;
+  font-size: .8rem;
 
 }
 
