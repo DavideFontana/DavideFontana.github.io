@@ -211,17 +211,21 @@
 }
 
 .worksCont{   
-
-  height: auto;
+  
+  width: 80vw;
+  max-width: 1700px;
+  text-align: center;
   margin: auto;
-  padding: 0 15vw;
+  padding: 0 0;
 }
 
 .imageCont{
-
+  
   position: relative;
   display: inline-block;
-  padding: 6rem 6rem;
+  margin: auto;
+  padding: 9vh;
+  
 }
 
 .image{
@@ -508,7 +512,8 @@
   
   position: relative;
   display: inline-block;
-  padding: 9vh 0;
+  margin: auto;
+  padding: 9vh;
 }
 
 
