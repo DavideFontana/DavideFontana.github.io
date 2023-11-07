@@ -295,6 +295,10 @@
 
 /* ALL */
 
+#Video3d{
+  height: 500px;
+}
+
 .btnCont{
   position: absolute;
   width: 100vw;
@@ -394,6 +398,7 @@
   display: inline-block;
   border: 1px solid #fff;
 }
+
 
 
 @media only screen and (max-width: 1024px){
@@ -562,6 +567,9 @@
   height: 235px;
   width: auto;
   max-width: 150%;
+}
+#Video3d{
+  height: 235px;
 }
 
 #foto_1{
