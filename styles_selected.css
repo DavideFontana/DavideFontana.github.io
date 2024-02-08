@@ -160,13 +160,14 @@
 
 
 
- /* LANGUAGES 
+  /* LANGUAGES */
 
   .langs{
     display: block;
     color: #fff;
     font-size: 1.2rem;
-    margin-left: 250px;
+    margin-left: 2.5rem;
+    padding-top: 1rem;
     
   }
 
@@ -193,7 +194,6 @@
   }
 
 
-*/
 
 
   
@@ -265,6 +265,9 @@
 
 }
 
+
+
+
 .descBlock{
   display: flex;
   width: 100%;
@@ -277,7 +280,7 @@
     display: flex;
     
     height: auto;
-    padding-top: 7vh;
+    padding-top: 4vh;
     padding-right: 5vw;
     padding-left: 5vw;
     width: 100%;

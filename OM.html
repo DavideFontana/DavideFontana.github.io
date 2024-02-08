@@ -63,15 +63,6 @@
   </nav>
 
 
-  <!--Language selector-->
-<!--
-    <div class="langs">
-    <a href="#" language="Italiano" class="active">IT</a>
-    <span>-</span>
-    <a href="#" language="English">EN</a>
-  </div>
--->
-
 
 
   <div class="header">
@@ -89,6 +80,15 @@
         </div>
     </div>
   </div>
+
+    <!--Language selector-->
+
+    <div class="langs">
+        <a href="#" language="Italiano" class="active" class="langBTN">IT</a>
+        <span>-</span>
+        <a href="#" language="English" class="langBTN">EN</a>
+      </div>
+    
 
   <div class="descBlock">
     <div class="descDiv">
@@ -170,7 +170,7 @@
     </div>
 </div>
 
-<div class="theme">
+<div class="theme" id="theme">
     <hr>
     <br>
     <br>
@@ -194,7 +194,7 @@
 
     <span> <i> VVVV-Gamma _ Reaper _ LoopMIDI _ Spitfire Labs </i></span>
     
-    <p>
+    <p id="Techsection">
         Oculus_Machina consiste in un algoritmo in framework .NET e basato su <i style="color: blue;">Comuter Vision</i>. 
         Partendo da un qualsiasi file video, l'algoritmo restituisce in tempo reale una ricostruzione
         delle immagini a schermo estrapolandone gli elementi chiave tramite <i style="color: blue;">image recognition</i>. 
