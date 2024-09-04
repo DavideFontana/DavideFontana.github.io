@@ -103,8 +103,8 @@
             <br>
             <br>
             <br>
-            Strange things happen while staring at the border with the unknown. Sometimes it becomes
-            foggy, abstract or fluid. You may start getting lost in yourself.
+            Strange things happen when staring at the border with the unknown. Sometimes it becomes
+            foggy, abstract or fluid. The more you look for answers, the more you start getting lost and confused.
             <br> 
             (Watch in Full Screen with Headphones for beast experience)
                 
@@ -134,21 +134,14 @@
 
 
 
-   <!--Footer-->
-<div class="footer">
-    
-    <div class="copyright">
-        <i class="fa-sharp fa-regular fa-copyright"></i>
-        <i id="year">2018-2023</i>
-
-        <a href="" style="color: #fff;" target="_blank">
-            <i class="fa-brands fa-linkedin"></i></a>
-        <a href="mailto:davidefon98@gmail.com" style="color: #fff;">
-            <i class="fa-sharp fa-regular fa-envelope"></i></a>
-        
-    </div>
-    
-</div>
+<!--Footer-->
+<script>
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.body.insertAdjacentHTML('beforeend', data);
+        });
+</script>
 
     
 </body>

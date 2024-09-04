@@ -94,10 +94,13 @@
 
   <div class="gameImgCont">
     
-    <video autoplay loop muted src="Mediapool/Game/Game_Apartment.mp4" class="gameImg"> Your browser doesn't support video tag.</video>
-    <img class="gameImg" src="Mediapool/Game/Liquor.jpg" alt="">
-    <video class="gameImg" autoplay loop muted src="Mediapool/Game/Wale Sequence.mp4">Your browser doesn't support video tag.</video>
-    <video autoplay loop muted src="Mediapool/Game/Car.mp4" class="gameImg">Your browser doesn't support video tag.</video>
+    <video autoplay loop muted src="Mediapool/Game/Clip TVs.mp4" class="gameImg"> Your browser doesn't support video tag.</video>
+   
+    <video class="gameImg" autoplay loop muted src="Mediapool/Game/Clip Tel 2.mp4">Your browser doesn't support video tag.</video> 
+
+    <img class="gameImg" src="Mediapool/Game/Stairs_proc.jpg" alt="">
+
+    <video autoplay loop muted src="Mediapool/Game/Clip Wale.mp4" class="gameImg">Your browser doesn't support video tag.</video>
     
 
 
@@ -125,20 +128,13 @@
 
 
    <!--Footer-->
-<div class="footer">
-    
-    <div class="copyright">
-        <i class="fa-sharp fa-regular fa-copyright"></i>
-        <i id="year">2018-2023</i>
-
-        <a href="" style="color: #fff;" target="_blank">
-            <i class="fa-brands fa-linkedin"></i></a>
-        <a href="mailto:davidefon98@gmail.com" style="color: #fff;">
-            <i class="fa-sharp fa-regular fa-envelope"></i></a>
-        
-    </div>
-    
-</div>
+   <script>
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.body.insertAdjacentHTML('beforeend', data);
+        });
+</script>
 
     
 </body>

@@ -113,7 +113,7 @@
                     <br>
                     <br>
                     <p id="infoInfo">Algorithm</p>
-                    <p id="infoYear">_2023</p>
+                    <p id="infoYear">_2024</p>
                 </div>
             </a>
         </div>
@@ -123,7 +123,7 @@
             <a href="CA.html">
                 <div class="infoHover">
                     <br>
-                    <p id="infoTitle">Can_Animation preV3.mov</p>
+                    <p id="infoTitle">Can_Animation V3.mov</p>
                     <br>
                     <hr>
                     
@@ -134,6 +134,24 @@
             </a>
         </div>
 
+
+        <div class="imageCont">
+            <img src="Mediapool/Frag (7).jpg" alt="Thumbnail" class="image">
+            <a href="FRAG.html">
+                <div class="infoHover">
+                    <br>
+                    <p id="infoTitle">Fragmented</p>
+                    <br>
+                    <hr>
+                    <br>
+                    <br>
+                    <br>
+                    <p id="infoInfo">Video</p>
+                    <p id="infoYear">_2022</p>
+                </div>
+            </a>
+            
+        </div>
 
         <div class="imageCont">
             <img src="Mediapool/DM.jpg" alt="Thumbnail" class="image">
@@ -153,12 +171,13 @@
             
         </div>
 
+
         <div class="imageCont">
             <img src="Mediapool/TC.jpg" alt="Thumbnail" class="image">
             <a href="TC.html">
                 <div class="infoHover">
                     <br>
-                    <p id="infoTitle">The_Collector</p>
+                    <p id="infoTitle">The Collector</p>
                     <br>
                     <hr>
                     <br>
@@ -177,7 +196,7 @@
             <a href="LL.html">
                 <div class="infoHover">
                     <br>
-                    <p id="infoTitle">Life_Line</p>
+                    <p id="infoTitle">Life Line</p>
                     <br>
                     <hr>
                     <br>
@@ -219,7 +238,7 @@
                     
                     <br>
                     <p id="infoInfo">Digital</p>
-                    <p id="infoYear">_2023</p>
+                    <p id="infoYear">_2022</p>
                 </div>
             </a>
         </div>
@@ -263,7 +282,7 @@
                     *scroll horizzontaly
                 </span>
                 <hr>
-                <span style="font-family:consolas, Cascadia mono, Arial ; font-size: 1.3vw;" >
+                <span>
                         *CLICK FOR AUDIO*
                 </span>
                 
@@ -657,23 +676,14 @@
 
 
 
-  <!--Footer-->
-<div class="footer">
-    
-    <div class="copyright">
-        <i class="fa-sharp fa-regular fa-copyright"></i>
-        <i id="year">2018-2023</i>
-
-        <a href="https://www.linkedin.com/in/davide-fontana-186a68272" style="color: #fff;" target="_blank">
-            <i class="fa-brands fa-linkedin"></i></a>
-        <a href="mailto:davidefon98@gmail.com" style="color: #fff;">
-            <i class="fa-sharp fa-regular fa-envelope"></i></a>
-        
-    </div>
-    
-</div>
-
-
+<!--Footer-->
+<script>
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.body.insertAdjacentHTML('beforeend', data);
+        });
+</script>
 
 </body>
 </html>

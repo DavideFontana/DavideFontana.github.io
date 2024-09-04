@@ -86,8 +86,8 @@
   <div class="descBlock">
     <div class="descDiv">
         <span>
-            The collector is my first experience with the stop-motion technique. Made with recycled materials and minimal equipment. 
-            The video represents a trailer for a possible future revisitation and creation of a complete work.
+            This is my first try with stop-motion technique. Made with recycled materials and minimal equipment. 
+            It's nothing more than a proof of concept.
 
         </span>
 
@@ -113,21 +113,14 @@
 
 
 
-   <!--Footer-->
-<div class="footer">
-    
-    <div class="copyright">
-        <i class="fa-sharp fa-regular fa-copyright"></i>
-        <i id="year">2018-2023</i>
-
-        <a href="" style="color: #fff;" target="_blank">
-            <i class="fa-brands fa-linkedin"></i></a>
-        <a href="mailto:davidefon98@gmail.com" style="color: #fff;">
-            <i class="fa-sharp fa-regular fa-envelope"></i></a>
-        
-    </div>
-    
-</div>
+<!--Footer-->
+<script>
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.body.insertAdjacentHTML('beforeend', data);
+        });
+</script>
 
     
 </body>

@@ -73,7 +73,7 @@
             <div class="info"> 
                 GENERATIVE SOUND + VISUALS
                 <br>
-                2023_
+                2024_
             </div>
             <div class="border"></div>
 
@@ -81,18 +81,60 @@
     </div>
   </div>
 
-    <!--Language selector-->
+    <!--Language selector
 
     <div class="langs">
         <a href="#" language="Italiano" class="active" class="langBTN">IT</a>
         <span>-</span>
         <a href="#" language="English" class="langBTN">EN</a>
       </div>
+
+-->
+
+
+<hr>
+
+
+
+<div id="scrollOM">
+    <div class="scrollSection">
+
+        <span style="position: absolute; top: 50%; font-size: 2.2rem; left: 1rem; color: white;">&lt; </span>
+        <span style="position: absolute; top: 50%; font-size: 2.2rem; right: 1rem; color: white;">&gt; </span>
+    
+      <div id="scrolldiv" class="scrollCont">
+
+        <a target="_blank" href="Mediapool/Full_images/OM preCenter.jpg" class="imgLink">
+            <img src="Mediapool/Full_images/OM preCenter.jpg" alt="Heavens door in a back alley" >        
+        </a>
+      <a target="_blank" href="Mediapool/Full_images/OM preTotal.jpg" class="imgLink">
+          <img src="Mediapool/Full_images/OM preTotal.jpg" alt="Bedroom LowPoly 3D" >        
+      </a>
+      <a target="_blank" href="Mediapool/Full_images/OM preClose.jpg" class="imgLink">
+          <img src="Mediapool/Full_images/OM preClose.jpg" alt="Paveillon Barcelona 3D Render" >
+      </a>
+      <a target="_blank" href="Mediapool/Full_images/OM Pre D.jpg" class="imgLink">
+          <img src="Mediapool/Full_images/OM Pre D.jpg" alt="Paveillon Barcelona 3D Render" >
+      </a>
+     
+      
+    </div>
+  </div>
+</div>
+
+      
+
+
+
+
+
+
+
     
 
   <div class="descBlock">
     <div class="descDiv">
-        <span id="desc">
+        <!-- <span id="desc">
             Nell’ era moderna si può affermare che buona parte di noi stessi e di ciò che ci compone come
             individui,
             vive in una forma che possiamo considerare a metà tra il concreto e l’astratto, una forma che spesso
@@ -128,7 +170,7 @@
             riconoscono come singola immagine e il tutto diventa una “semplice” fotografia.
             <br>
             <br>
-        </span>
+        </span> -->
 
     </div>
   </div>
@@ -175,9 +217,8 @@
     <br>
     <br>
     <b>
-      <span style="color: rgb(2, 2, 255);">Oculus Machina</span>  vuole dare una
-      raffigurazione audiovisiva del flusso di dati, codici e informazione che compongono un file digitale, bypassando la decodifica della macchina.
-    <br>
+      <span> Seeing the world through the eyes of the machines </span>
+    <!--<br>
       L’opera indaga su quello che si nasconde dietro alla simulazione della realtà messa in scena
       dalla macchina, scoperchiando quest’ ultima e guardandoci dentro come fosse un formicaio.
       Questo porta a interrogarsi su cosa sia effettivamente unQuesto porta a interrogarsi su cosa sia effettivamente un “file”. Quello che noi chiamiamo e
@@ -185,7 +226,7 @@
       schermo, ciò che la macchina vuole farci vedere, una sua simulazione di quello che noi interpretiamo
       come tale, mentre dietro le quinte avvengono complicati processi di elaborazione su sequenze binarie
       che ai nostri occhi non avrebbero il benchè minimo significato.
-    </b>
+    </b>-->
 </div>
  
 <div class="tech">
@@ -194,13 +235,13 @@
 
     <span> <i> VVVV-Gamma _ Reaper _ LoopMIDI _ Spitfire Labs </i></span>
     
-    <p id="Techsection">
+    <p id="Techsection"><!--
         Oculus_Machina consiste in un algoritmo in framework .NET e basato su <i style="color: blue;">Comuter Vision</i>. 
         Partendo da un qualsiasi file video, l'algoritmo restituisce in tempo reale una ricostruzione
         delle immagini a schermo estrapolandone gli elementi chiave tramite <i style="color: blue;">image recognition</i>. 
         Allo stesso modo con i parametri restituiti dal riconoscimento delle immagini inviano
         segnali MIDI a sintetizzatori e stumenti digitali che creano suoni generativi che rispondono 
-        alla ricostruzione dell'immagine.
+        alla ricostruzione dell'immagine.-->
 
     </p>
 
@@ -212,21 +253,14 @@
 
 
 
-   <!--Footer-->
-<div class="footer">
-    
-    <div class="copyright">
-        <i class="fa-sharp fa-regular fa-copyright"></i>
-        <i id="year">2018-2023</i>
-
-        <a href="" style="color: #fff;" target="_blank">
-            <i class="fa-brands fa-linkedin"></i></a>
-        <a href="mailto:davidefon98@gmail.com" style="color: #fff;">
-            <i class="fa-sharp fa-regular fa-envelope"></i></a>
-        
-    </div>
-    
-</div>
+<!--Footer-->
+<script>
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.body.insertAdjacentHTML('beforeend', data);
+        });
+</script>
 
     
 </body>
