@@ -157,6 +157,16 @@
     margin-top: 6rem;
   }
 
+  .about{
+    display: block;
+    width: 70%;
+    margin-left: 5vw;
+    margin-top: 6rem;
+
+
+    color: white;
+  }
+
 
 
 
@@ -312,6 +322,8 @@
     font-size: 5rem;
 
   }
+
+
   
 
 
