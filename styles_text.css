@@ -1,0 +1,425 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    max-width: 100%;
+
+  }
+  
+
+
+#mousePos{
+  color: rgb(255, 255, 255);
+  font-family: "Consolas", 'Source Code Pro';
+  z-index: 200;
+}
+
+#mousetx {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 200;
+}
+
+
+
+
+
+/* NAVBAR */
+
+.navbar{
+  margin: 16px auto;
+
+  position: relative;
+
+  min-width: 500px;
+
+  
+  font-size: 1.5rem;
+  font-family:"consolas", "Cascadia mono", 'Source Code Pro', "Arial" ;
+  width: 100%;
+  height: 9rem;
+  
+  
+}
+
+.name{
+  display: inline-block;
+  margin-left: 2%;
+  margin-right: auto;
+  
+  color: #ffffff;
+  letter-spacing: .8vw;
+  font-size: 1.3rem;
+  text-shadow: 0 0 1rem #fff , 0 0 2rem #fff ;
+  width: auto;
+
+  padding-top: 1rem;
+}
+
+.navbarUL{
+  
+    float: right;
+    width: auto;
+    padding-top: 1rem;
+    margin-right: 2rem;
+   
+  }
+  
+  .navbarLinks{
+    list-style-type: none;
+    display: inline-block;
+    
+  
+  }
+  
+  .navbarItem{
+    
+    
+    border: 1px dashed #fff;
+    border-top: none;
+    border-bottom: none;
+    
+    padding: 0 3rem;
+    color: white;
+    text-decoration: none;
+    z-index: 20;
+    
+    
+  }
+  
+  .navbarItem:hover{
+  
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+    text-decoration-color: rgb(255, 255, 255);
+    border-top: white;
+    text-shadow: 0px 0px 2rem #fff;
+    transition: 0.2s;
+    
+  }
+
+.hiddenCont{
+  
+  height: auto;
+    width: 10.25rem;
+    margin: 0px 0px;
+    
+    font-size: 1.3rem;
+    position: absolute;
+    display:block;
+    opacity: 0;
+    border: 1px dashed white;
+    border-top: none;
+    transition: 0.5s ease-out;
+
+}
+
+.hiddenlink{ 
+    padding: 7px 0;
+    display: block; 
+    list-style-type: none;
+    
+    text-align: center;
+    
+  }
+  
+  .hidden{
+    font-family:"consolas", "Cascadia mono", 'Source Code Pro', "Arial" ;
+    align-items: center;
+    display:block;
+    text-decoration: none;
+    color: #fff;
+    margin: 15px auto;
+  }
+  
+  #works:hover .hiddenCont{
+    display: block;
+    opacity: 1;
+    transition: 0.2s ease-in;
+    
+    
+  }
+  
+  .hidden:hover{
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+    text-decoration-color: rgb(255, 255, 255);
+    border-top: white;
+  }
+
+
+.worksPage{
+  background-color: black;
+
+}
+
+
+
+
+/* BODY */
+
+
+
+.imageCont{
+  
+  position: relative;
+  display: inline-block;
+  margin: auto;
+  padding: 2rem 5rem;
+  font-family:'Source Code Pro', "consolas", "Cascadia mono", "Arial" ;
+  
+}
+
+.image{
+
+  display: inline-block;
+  object-fit: cover;
+  width: 25vw;
+  box-shadow: rgb(0, 0, 0) 20px 20px 0px -1px, rgb(255, 255, 255) 20px 20px;
+  transition: 0.2s ease-in-out;
+}
+
+
+
+.infoHover{
+  position: absolute;
+  width: 25vw;
+  height: 91%;
+  top: 2rem;
+  
+ 
+  opacity: 0;
+  
+
+  text-align: left;
+
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.78);
+
+  transition: 1s ease;
+}
+
+
+
+.imageCont:hover .infoHover{
+  opacity: 1;
+  
+}
+
+
+
+.imageCont:hover .image{
+  box-shadow: rgb(0, 0, 0) 0 0 0px -1px, rgb(0, 0, 0) 0 0;
+}
+
+
+#infotext{
+    
+    margin-left: 2rem;
+    font-size: 5rem;
+}
+
+
+.thesisinfo {
+  display: inline-block;
+  width: 60vw;
+  color: white;
+  vertical-align: top;
+  padding: 5rem;
+  font-family: 'Source Code Pro', "consolas", "Cascadia mono", "Arial";
+  font-size: 1.5rem;
+
+  text-align: justify;
+  text-justify: inter-word;
+
+}
+
+
+
+
+
+/* FOOTER */
+
+
+.footer{
+  text-align: right;
+  color: #fff;
+  font-family:"consolas", "Cascadia mono", "Arial";
+  padding-right: 2.5rem;
+}
+
+#year{
+  padding-right: 2rem;
+}
+
+.copyright{
+  text-align: center;
+  width: 17rem;
+  font-size: 1.2rem;
+  display: inline-block;
+  border: 1px solid #fff;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 1024px){
+  *{
+    max-width: 100%;
+  }
+
+  .navbar{
+    display: block;
+    text-align: center;
+    min-width: auto;
+    width: 100%;
+    margin: auto;
+  }
+
+  .navbarUL{
+    display: block;
+    width: 100%;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .navbarLinks{
+    list-style-type: none;
+    display: inline-block;
+    
+  
+  }
+  
+  .navbarItem{
+    
+    font-family:"consolas", "Cascadia mono", "Arial" ;
+    border: 1px dashed #fff;
+    border-top: none;
+   
+    font-size: 100%;
+    padding: 0 4vw;
+    color: white;
+    text-decoration: none;
+    z-index: 20; 
+  }
+  
+  .navbarItem:hover{
+  
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+    text-decoration-color: rgb(255, 255, 255);
+    border-top: white;
+    text-shadow: 0px 0px 15px #fff;
+    transition: 0.2s;
+    
+  }
+  
+  
+  .hiddenCont{
+    
+    
+    width: auto;
+    
+  }
+  
+  
+ 
+  
+  .hidden:hover{
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+    text-decoration-color: rgb(255, 255, 255);
+    border-top: white;
+  }
+  
+.name{
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+
+
+    /* BODY */
+
+
+
+.imageCont{
+  
+  margin: auto;
+  padding: 2rem;
+  
+  
+}
+
+.image{
+  
+  width: 50vw;
+}
+
+
+
+.infoHover{
+  position: absolute;
+  width: 50vw;
+  height: 80%;
+  top: 2rem;
+  
+}
+
+
+
+#infotext{
+    
+    margin-left: 1rem;
+    font-size: 1rem;
+}
+
+
+.thesisinfo{
+    
+    width: 100vw;
+    color: white;
+    vertical-align: top;
+    padding: 1rem;
+    font-size: 1.5rem;
+    
+}
+
+/* FOOTER */
+
+.footer{
+  text-align: center;
+  
+  
+  padding-right: 0rem;
+  padding-top: 2rem;
+}
+
+
+
+.copyright{
+  text-align: center;
+  
+  font-size: 1.2rem;
+
+}
+
+
+
+
+
+
+}

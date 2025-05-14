@@ -103,7 +103,7 @@
   
   .hiddenCont{
     
-    height: 10rem;
+    height: auto;
     width: 10.25rem;
     margin: 0px 0px;
     
@@ -503,26 +503,15 @@
   }
   
   
-  
-  
-  
   .hiddenCont{
-    display: none;
-  }
-
-  .hiddenlink{ 
-    display: none;
-  }
-  
-  .hidden{
-    display: none;
-  }
-  
-  
-  #works:hover .hiddenCont{
-    opacity: 0;
+    
+    
+    width: auto;
     
   }
+  
+  
+ 
   
   .hidden:hover{
     text-decoration: line-through;

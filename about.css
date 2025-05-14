@@ -1,315 +1,309 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    max-width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
 
+}
+
+#mousePos {
+  color: rgb(255, 255, 255);
+  font-family: "Consolas", 'Source Code Pro';
+  z-index: 200;
+}
+
+#mousetx {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 200;
+}
+
+
+
+
+
+/* NAVBAR */
+
+.navbar {
+  margin: 16px auto;
+
+  position: relative;
+
+  min-width: 500px;
+
+
+  font-size: 1.5rem;
+  font-family: "consolas", "Cascadia mono", 'Source Code Pro', "Arial";
+  width: 100%;
+  height: 9rem;
+
+
+}
+
+.name {
+  display: inline-block;
+  margin-left: 2%;
+  margin-right: auto;
+
+  color: #ffffff;
+  letter-spacing: .8vw;
+  font-size: 1.3rem;
+  text-shadow: 0 0 1rem #fff, 0 0 2rem #fff;
+  width: auto;
+
+  padding-top: 1rem;
+}
+
+.navbarUL {
+
+  float: right;
+  width: auto;
+  padding-top: 1rem;
+  margin-right: 2rem;
+
+}
+
+.navbarLinks {
+  list-style-type: none;
+  display: inline-block;
+
+
+}
+
+.navbarItem {
+
+
+  border: 1px dashed #fff;
+  border-top: none;
+  border-bottom: none;
+
+  padding: 0 3rem;
+  color: white;
+  text-decoration: none;
+  z-index: 20;
+
+
+}
+
+.navbarItem:hover {
+
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+  text-decoration-color: rgb(255, 255, 255);
+  border-top: white;
+  text-shadow: 0px 0px 2rem #fff;
+  transition: 0.2s;
+
+}
+
+.hiddenCont {
+
+  height: auto;
+  width: 10.25rem;
+  margin: 0px 0px;
+
+  font-size: 1.3rem;
+  position: absolute;
+  display: block;
+  opacity: 0;
+  border: 1px dashed white;
+  border-top: none;
+  transition: 0.5s ease-out;
+
+}
+
+.hiddenlink {
+  padding: 7px 0;
+  display: block;
+  list-style-type: none;
+
+  text-align: center;
+
+}
+
+.hidden {
+  font-family: "consolas", "Cascadia mono", 'Source Code Pro', "Arial";
+  align-items: center;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  margin: 15px auto;
+}
+
+#works:hover .hiddenCont {
+  display: block;
+  opacity: 1;
+  transition: 0.2s ease-in;
+
+
+}
+
+.hidden:hover {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+  text-decoration-color: rgb(255, 255, 255);
+  border-top: white;
+}
+
+.body {
+  font-family: 'Source Code Pro', "consolas", "Cascadia mono", "Arial";
+  background-color: black;
+}
+
+
+.aboutInfo {
+  color: #fff;
+  margin-left: 5vw;
+  margin-top: 6rem;
+}
+
+.about {
+  display: block;
+  width: 70%;
+  margin-left: 5vw;
+  margin-top: 6rem;
+
+
+  color: white;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+
+.footer {
+  padding-top: 20vh;
+  text-align: right;
+  color: #fff;
+  font-family: "consolas", "Cascadia mono", "Arial";
+  padding-right: 2.5rem;
+}
+
+
+.copyright {
+  text-align: center;
+  width: 17rem;
+  font-size: 1.2rem;
+  display: inline-block;
+  border: 1px solid #fff;
+}
+
+
+
+@media only screen and (max-width: 1023px) {
+
+  * {
+    max-width: 100vw;
   }
 
-  #mousePos{
-    color: rgb(255, 255, 255);
-    font-family: "Consolas", 'Source Code Pro';
-    z-index: 200;
-  }
-  
-  #mousetx {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    z-index: 200;
-  }
-  
-
-
-
-
-  /* NAVBAR */
-
-  .navbar{
-    margin: 16px auto;
-  
-    position: relative;
-  
-    min-width: 500px;
-  
-    
-    font-size: 1.5rem;
-    font-family:"consolas", "Cascadia mono", 'Source Code Pro', "Arial" ;
+  .navbar {
+    display: block;
+    text-align: center;
+    min-width: auto;
     width: 100%;
-    height: 9rem;
-    
-    
+    margin: auto;
   }
-  
-  .name{
-    display: inline-block;
-    margin-left: 2%;
+
+  .navbarUL {
+    display: block;
+    width: 100%;
+    float: none;
+    margin-left: auto;
     margin-right: auto;
-    
-    color: #ffffff;
-    letter-spacing: .8vw;
-    font-size: 1.3rem;
-    text-shadow: 0 0 1rem #fff , 0 0 2rem #fff ;
-    width: auto;
-  
-    padding-top: 1rem;
+    margin: 0;
+    align-items: center;
+    text-align: center;
   }
-  
-  .navbarUL{
-  
-    float: right;
-    width: auto;
-    padding-top: 1rem;
-    margin-right: 2rem;
-   
-  }
-  
-  .navbarLinks{
+
+  .navbarLinks {
     list-style-type: none;
     display: inline-block;
-    
-  
+
+
   }
-  
-  .navbarItem{
-    
-    
+
+  .navbarItem {
+
+    font-family: "consolas", "Cascadia mono", "Arial";
     border: 1px dashed #fff;
     border-top: none;
-    border-bottom: none;
-    
-    padding: 0 3rem;
+
+    font-size: 100%;
+    padding: 0 4vw;
     color: white;
     text-decoration: none;
     z-index: 20;
-    
-    
   }
-  
-  .navbarItem:hover{
-  
+
+  .navbarItem:hover {
+
     text-decoration: line-through;
     text-decoration-thickness: 2px;
     text-decoration-color: rgb(255, 255, 255);
     border-top: white;
-    text-shadow: 0px 0px 2rem #fff;
+    text-shadow: 0px 0px 15px #fff;
     transition: 0.2s;
-    
+
   }
-  
-  .hiddenCont{
-    
-    height: 10rem;
-    width: 10.25rem;
-    margin: 0px 0px;
-    
-    font-size: 1.3rem;
-    position: absolute;
-    display:block;
-    opacity: 0;
-    border: 1px dashed white;
-    border-top: none;
-    transition: 0.5s ease-out;
-  
+
+
+
+  .hiddenCont {
+
+
+    width: auto;
+
   }
-  
-  .hiddenlink{ 
-    padding: 7px 0;
-    display: block; 
-    list-style-type: none;
-    
-    text-align: center;
-    
-  }
-  
-  .hidden{
-    font-family:"consolas", "Cascadia mono", 'Source Code Pro', "Arial" ;
-    align-items: center;
-    display:block;
-    text-decoration: none;
-    color: #fff;
-    margin: 15px auto;
-  }
-  
-  #works:hover .hiddenCont{
-    display: block;
-    opacity: 1;
-    transition: 0.2s ease-in;
-    
-    
-  }
-  
-  .hidden:hover{
+
+
+
+
+  .hidden:hover {
     text-decoration: line-through;
     text-decoration-thickness: 2px;
     text-decoration-color: rgb(255, 255, 255);
     border-top: white;
   }
 
-  .body{
-    font-family:'Source Code Pro', "consolas", "Cascadia mono", "Arial" ;
-    background-color: black;
-  }
-
-
-  .aboutInfo{
-    color: #fff;
-    margin-left: 5vw;
-    margin-top: 6rem;
-  }
-
-  .about{
-    display: block;
-    width: 70%;
-    margin-left: 5vw;
-    margin-top: 6rem;
-
-
-    color: white;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /* FOOTER */
-
-
-  .footer{
-    padding-top: 20vh;
-    text-align: right;
-    color: #fff;
-    font-family:"consolas", "Cascadia mono", "Arial";
-    padding-right: 2.5rem;
-  }
- 
-  
-  .copyright{
-    text-align: center;
-    width: 17rem;
-    font-size: 1.2rem;
-    display: inline-block;
-    border: 1px solid #fff;
-  }
-  
-
-
-  @media only screen and (max-width: 1023px){
-
-    *{
-      max-width: 100vw;
-    }
-  
-    .navbar{
-      display: block;
-      text-align: center;
-      min-width: auto;
-      width: 100%;
-      margin: auto;
-    }
-  
-    .navbarUL{
-      display: block;
-      width: 100%;
-      float: none;
-      margin-left: auto;
-      margin-right: auto;
-      margin: 0;
-      align-items: center;
-      text-align: center;
-    }
-    
-    .navbarLinks{
-      list-style-type: none;
-      display: inline-block;
-      
-    
-    }
-    
-    .navbarItem{
-      
-      font-family:"consolas", "Cascadia mono", "Arial" ;
-      border: 1px dashed #fff;
-      border-top: none;
-     
-      font-size: 100%;
-      padding: 0 4vw;
-      color: white;
-      text-decoration: none;
-      z-index: 20; 
-    }
-    
-    .navbarItem:hover{
-    
-      text-decoration: line-through;
-      text-decoration-thickness: 2px;
-      text-decoration-color: rgb(255, 255, 255);
-      border-top: white;
-      text-shadow: 0px 0px 15px #fff;
-      transition: 0.2s;
-      
-    }
-    
-    
-    
-    
-    
-    .hiddenCont{
-      display: none;
-    }
-  
-    .hiddenlink{ 
-      display: none;
-    }
-    
-    .hidden{
-      display: none;
-    }
-    
-    
-    #works:hover .hiddenCont{
-      opacity: 0;
-      
-    }
-    
-    .hidden:hover{
-      text-decoration: line-through;
-      text-decoration-thickness: 2px;
-      text-decoration-color: rgb(255, 255, 255);
-      border-top: white;
-    }
-    
-  .name{
+  .name {
     display: block;
     width: 100%;
     text-align: center;
@@ -317,32 +311,44 @@
     margin-left: auto;
   }
 
-  #cubelogo{
+  .about {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    margin-left: 0;
+    margin-top: 6rem;
+    color: white;
 
-    font-size: 5rem;
-
+    text-align: justify;
+    text-justify: inter-word;
   }
 
 
   
+  
+  #cubelogo {
+    font-size: 5rem;
+  }
+
+
+
 
 
   /* FOOTER */
 
 
-  .footer{
+  .footer {
     padding-top: 20vh;
     text-align: center;
     padding-right: 0;
   }
- 
-  
-  .copyright{
+
+
+  .copyright {
     text-align: center;
     width: 100%;
     font-size: 1.2rem;
     display: block;
-    
+
   }
 }
-  
