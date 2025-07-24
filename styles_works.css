@@ -46,15 +46,15 @@
 .name {
   display: inline-block;
   margin-left: 2%;
+  margin-top: 1%;
   margin-right: auto;
 
   color: #ffffff;
   letter-spacing: .8vw;
   font-size: 1.3rem;
-  text-shadow: 0 0 1rem #fff, 0 0 2rem #fff;
+  /* text-shadow: 0 0 1rem #fff, 0 0 2rem #fff; */
   width: auto;
-
-  padding-top: 1rem;
+  background-color: #0d00ff;
 }
 
 .navbarUL {
@@ -478,6 +478,7 @@
 
   .name {
     display: block;
+    margin-top: 5%;
     width: 100%;
     text-align: center;
     margin-right: auto;

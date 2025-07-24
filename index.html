@@ -14,8 +14,9 @@
 
     <script src="https://kit.fontawesome.com/95673677e4.js" crossorigin="anonymous"></script>
 </head>
-<body id="homePage" onload="myMove()">
+<body id="homePage" onload="RandomImageCarousel()">
    
+
 
 <!--Navigation bar-->
 <nav class="navbar">
@@ -50,41 +51,37 @@
 </nav>
 
 
-<!--BG
-<div class="bg">
-    <video id="bgVideo" autoplay loop muted poster="Mediapool/Lampioni_Line art_CLEAN.mp4">
+
+
+
+<div class="bg" style="z-index: 0;">
+
+    <!-- <video id="bgVideo" autoplay loop muted poster="Mediapool/Lampioni_Line art_CLEAN.mp4">
         <source src="Mediapool/Lampioni_Line art_CLEAN.mp4" type="video/mp4">
-    </video>
+    </video> -->
+
+    <div  class="slideShow" style="color: #fff;">
+        <img id="coverSlide" class="slideImg fade" alt="">
+    </div>
+
+    <div class="name">
+        <div id="df">Davide _ Fontana
+            <!--  <div class="bg2">
+            <video id="bgVideo2" autoplay loop muted poster="Mediapool/Lampioni_Line art_CLEAN.mp4">
+                <source src="Mediapool/OM_1.mp4" type="video/mp4">
+            </video>
+        </div> -->    
+        </div>
+    </div>
+
 </div>
+
+
 <div id="mousetx" style="border:1px solid rgb(255, 255, 255);padding:4px">
     <a id="mousePos">
       <b><span id="mouse-pos"></span></b>
     </a>
-
-    <script src="app.js"></script>
-    
 </div>
-
--->
-
-<div class="name">
-    <div id="df">Davide _ Fontana
-        
-        <!-- <div class="bg2">
-            <video id="bgVideo2" autoplay loop muted poster="Mediapool/Lampioni_Line art_CLEAN.mp4">
-                <source src="Mediapool/OM_1.mp4" type="video/mp4">
-            </video>
-        </div> -->
-        
-    </div>
-    
-</div>
-
-
-
-
-
-
 
 
 
@@ -102,10 +99,6 @@
 
             <span id="currentYear" style="color: white;"></span>
             
-    
-            <a href="https://www.linkedin.com/in/davide-fontana-186a68272/" style="color: #fff;" target="_blank">
-                <i class="fa-brands fa-linkedin"></i></a>
-
             <a href="mailto:davidefon98@gmail.com" style="color: #fff;">
                 <i class="fa-sharp fa-regular fa-envelope"></i></a>
             
@@ -118,11 +111,7 @@
 
 </footer>
 
-
-
-
-
-
+<script src="app.js"></script>
 
 </body>
 </html>

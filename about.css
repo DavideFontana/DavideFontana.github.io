@@ -48,10 +48,11 @@
   color: #ffffff;
   letter-spacing: .8vw;
   font-size: 1.3rem;
-  text-shadow: 0 0 1rem #fff, 0 0 2rem #fff;
+  /* text-shadow: 0 0 1rem #fff, 0 0 2rem #fff; */
   width: auto;
 
-  padding-top: 1rem;
+  background-color: #0d00ff;
+  margin-top: 1%;
 }
 
 .navbarUL {
@@ -306,6 +307,7 @@
   .name {
     display: block;
     width: 100%;
+    margin-top: 5%;
     text-align: center;
     margin-right: auto;
     margin-left: auto;

@@ -43,6 +43,23 @@ var r = Math.floor((Math.random() * 25));
 
 
 
+//Random Image Carousel
+
+var imagePool = [
+  "Mediapool\\Full_images\\BIC_Full.png", 
+  "Mediapool\\Full_images\\CanAnim-Full.png", 
+  "Mediapool\\Full_images\\Frag (2).jpg", 
+  "Mediapool\\Full_images\\Island_frame3.jpg", 
+  "Mediapool\\Full_images\\Frag (5).jpg", 
+  "Mediapool\\Full_images\\DM-2.jpg", 
+  "Mediapool\\Full_images\\Island_frame1.jpg", 
+];
+
+function RandomImageCarousel(){
+  var currentIndex = Math.floor(Math.random()*imagePool.length);
+  document.getElementById("coverSlide").src = imagePool[currentIndex];
+}
+
 
 
 

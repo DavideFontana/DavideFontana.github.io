@@ -45,20 +45,22 @@
     z-index: 100;
   }
   
-  .name{
-    display: inline-block;
-    margin-left: 2%;
-    margin-right: auto;
+    .name {
+      display: inline-block;
+      margin-left: 2%;
+      margin-right: auto;
+  
+      color: #ffffff;
+      letter-spacing: .8vw;
+      font-size: 1.3rem;
+      /* text-shadow: 0 0 1rem #fff , 0 0 2rem #fff ; */
+      width: auto;
+  
+      background-color: #0d00ff;
+      margin-top: 1%;
+    }
+
     
-    color: #ffffff;
-    letter-spacing: .8vw;
-    font-size: 1.3rem;
-    text-shadow: 0 0 1rem #fff , 0 0 2rem #fff ;
-    width: auto;
-  
-    padding-top: 1rem;
-  }
-  
   .navbarUL{
   
     float: right;
