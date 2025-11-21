@@ -162,6 +162,11 @@
 /* BODY */
 
 
+.textCont{
+  position: relative;
+}
+
+
 
 .imageCont {
 
@@ -207,7 +212,6 @@
 
 .imageCont:hover .infoHover {
   opacity: 1;
-
 }
 
 
@@ -225,6 +229,8 @@
 
 
 .thesisinfo {
+  
+
   display: inline-block;
   width: 60vw;
   color: white;
@@ -235,7 +241,13 @@
 
   text-align: justify;
   text-justify: inter-word;
+  
 
+}
+
+.textFooter{
+  position: absolute;
+  bottom: 2rem;
 }
 
 .smile span {
@@ -346,10 +358,7 @@
 
 
   .hiddenCont {
-
-
     width: auto;
-
   }
 
 
@@ -410,6 +419,7 @@
 
 
   .thesisinfo {
+    
 
     width: 100vw;
     color: white;
@@ -418,6 +428,11 @@
     font-size: 1.5rem;
 
   }
+
+  .textFooter{
+  position: static;
+  padding-bottom: 5rem;
+}
 
   .smile span {
     border: 1px solid white;
