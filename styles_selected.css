@@ -293,11 +293,20 @@
 .quoteDiv {
   color: #696969;
   display: inline-block;
-  height: auto;
-  padding-top: 10vh;
-  width: 40%;
-  text-align: center;
-  padding-right: 15vw;
+  margin-top: 8vh;
+  width: 50vw;
+  text-align: justify;
+  padding-right: 5rem;
+  
+  
+}
+
+#quote{
+  display: block;
+  margin: auto;
+  width: 60%;
+  
+
 }
 
 
@@ -310,16 +319,33 @@
   
 }
 
+.workvideo{
+  display: inline-block;
+  margin-top: 8vh;
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5rem;
+  
+}
+
 
 .YT{
-  display: inline-block;
+  display: block;
   border: 1px solid #fff;
-  margin-top: 15vh;
-  margin-left: 5vw;
-  margin-right: 14vw;
-
-  width: 771px; 
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px; 
   /* height: 410px; */
+}
+
+#Itchio{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  width: 700px; 
+  height: 168px;
 }
 
 .Buttons{
@@ -569,10 +595,10 @@
 .descDiv{
   
   padding-top: 7vh;
-  padding-right: 5vw;
-  padding-left: 5vw;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
   width: 100%;
-  font-size: .8rem;
+  font-size: 1rem;
  
   text-align: none;
 }
@@ -588,24 +614,60 @@
   
 }
 
+#quote{
+  display: block;
+  margin: auto;
+  width: auto;
+
+  padding-top: 2rem;
+  
+  
+}
+
+.quoteDiv {
+  
+  display: block;
+  
+  width: 100vw;
+  text-align: justify;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+
+  
+  font-size: 1rem;
+}
+
+
+.workvideo{
+  display: block;
+  margin-top: 8vh;
+  width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;  
+}
+
 
 .YT{
   display: block;
-  width: 80vw;
-  height: (80vw*9)/16;
-
-  margin-top: 15vh;
+  border: 1px solid #fff;
   margin-left: auto;
   margin-right: auto;
+  width: 500px; 
+  height: 350px;
+  
 }
+
 
 .Buttons{
   display: block;
   color: white;
 
-  margin-top: 5rem;
-
-  padding-right: 1rem;
+  padding-right: 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  
 }
 
 .Buttons a{
@@ -632,26 +694,12 @@
 }
 
 
-.quoteDiv{
-  
-  
-  margin-right: auto;
-  margin-left: auto;
-  display: block;
-  
-  padding-top: 10vh;
-  width: 80vw;
-  padding-bottom: 0;
-  
-  padding-right: 0;
-  font-size: .7rem;
-}
 
 .theme{
   display: block;
   font-family: 'Source Code Pro', "Arial";
   padding: 15vh 5vw;
-  font-size: .8rem;
+  font-size: 1rem;
 }
 
 
@@ -673,7 +721,13 @@
   margin-top: 5rem;
   padding: 0rem 5vw;
   padding-bottom: 2rem;
-  font-size: .8rem;
+  font-size: 1rem;
+
+}
+
+.Techsection a{
+
+  padding-top: 2rem;
 
 }
 
