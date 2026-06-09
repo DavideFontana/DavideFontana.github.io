@@ -170,6 +170,22 @@
   text-justify: inter-word;
 }
 
+.socials {
+  display: inline-block;
+  color: white;
+  padding-top: 2rem;
+  padding-right: 1rem;
+
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.emoji {
+  display: inline-block;
+  font-size: 2rem;
+  padding: 3rem;
+}
+
 
 
 
