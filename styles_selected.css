@@ -279,7 +279,7 @@
 
 .descDiv {
   color: #fff;
-  display: flex;
+  
 
   height: auto;
   padding-top: 4vh;
@@ -288,6 +288,8 @@
   width: 100%;
 
   text-align: justify;
+  column-count: 2;
+  column-gap: 5rem;
 }
 
 .quoteDiv {
@@ -593,6 +595,8 @@
 }
 
 .descDiv{
+
+  display: flex;
   
   padding-top: 7vh;
   padding-right: 1.5rem;
